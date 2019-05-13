@@ -187,9 +187,13 @@ void MainWindow::updateActions(const QItemSelection &selection)
     if (!indexes.isEmpty()) {
         removeAct->setEnabled(true);
         editAct->setEnabled(true);
+        removePolicyAct->setEnabled(true);
+        editPolicyAct->setEnabled(true);
     } else {
         removeAct->setEnabled(false);
         editAct->setEnabled(false);
+        removePolicyAct->setEnabled(false);
+        editPolicyAct->setEnabled(false);
     }
 }
 //! [4]
